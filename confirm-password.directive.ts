@@ -12,3 +12,7 @@ export const confirmPasswordValidator: ValidatorFn = (control: AbstractControl):
   confirmPassword.setErrors(null);
   return null
 }
+
+/**  add this "{validators: confirmPasswordValidator}" in the end of the Form Group after controls as in the following example:
+     "new Form Group ( {controls...}, {validators: confirmPasswordValidator} )"
+ */
